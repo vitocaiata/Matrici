@@ -31,7 +31,7 @@ public class Main {
                     System.out.println("Inserisci colonne : ");
                     col = scelta.nextInt();
                     int[][] matrice = new int[riga][col];
-                    //matrice = Matrici.caricaMatrice(riga, col);
+                    matrice = Matrici.caricaMatrice(matrice,20);
                     System.out.println("\n SCEGLI (0) STAMPA VERTICALE O (1) ORIZZONTALE");
                     stampa = scelta.nextInt();
                     switch(stampa){
