@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-
+        int s, j, stampa, op;
+        Matrici matrici;
         Scanner scelta = new Scanner(System.in);
         boolean continua = true;
-        int s, j, stampa, riga, col, op;
+
 
         do{
             System.out.println("------------------------");
@@ -27,19 +28,19 @@ public class Main {
                     break;
                 case 1:
                     System.out.println("Inserisci righe : ");
-                    riga = scelta.nextInt();
+                    int riga = scelta.nextInt();
                     System.out.println("Inserisci colonne : ");
-                    col = scelta.nextInt();
-                    int[][] matrice = new int[riga][col];
-                    matrice = Matrici.caricaMatrice(matrice,20);
+                    int col = scelta.nextInt();
+                    matrici = new Matrici(new int[riga][col]);
+                    matrici.caricaMatrice();
                     System.out.println("\n SCEGLI (0) STAMPA VERTICALE O (1) ORIZZONTALE");
                     stampa = scelta.nextInt();
                     switch(stampa){
                         case 0:
-                            Matrici.stampaVerticale(matrice);
+                            matrici.stampaVerticale();
                             break;
                         case 1:
-                            Matrici.stampaOrizzontale(matrice);
+                            matrici.stampaOrizzontale();
                             break;
                         default :
                             System.out.println("Errore.");
@@ -86,11 +87,11 @@ public class Main {
 
     }
 
-    private static void esMatrici(){
+    /*private static void esMatrici(){
         int[][] matrix = new int[5][5];
         Matrici.caricaMatrice(matrix);
         Matrici.stampaOrizzontale(matrix);
         Matrici.stampaVerticale(matrix);
-    }
+    }*/
 
 }
