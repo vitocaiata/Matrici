@@ -1,3 +1,5 @@
+package piramide;
+
 public class Piramidi {
     public static void stampaPiramide(int n){
         for(int i = 1; i <= n; i++){

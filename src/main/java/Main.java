@@ -1,3 +1,7 @@
+import calcolatrice.Operazioni;
+import matrici.Matrici;
+import piramide.Piramidi;
+
 import java.util.Scanner;
 
 public class Main {
@@ -58,6 +62,7 @@ public class Main {
                     System.out.println("2 SOTTRAZIONE  : ");
                     System.out.println("3 DIVISIONE  : ");
                     System.out.println("4 MOLTIPLICAZIONE  : ");
+                    System.out.println("5 NUMERO PRIMO  : ");
                     op = scelta.nextInt();
                     System.out.println(" Inserisci il primo valore : ");
                     int a = scelta.nextInt();
@@ -75,11 +80,13 @@ public class Main {
                         case 4:
                             System.out.println(" " + a + " * " + b + " " + Operazioni.Moltiplicazione(a,b));
                             break;
+                        case 5:
+                            Operazioni.numeroPrimo();
                     }
                     break;
 
                 default:
-                    System.out.println("Inserire un nuero tra 0 e 3");
+                    System.out.println("Inserire un numero tra 0 e 5");
             }
         }while(continua);
 
@@ -89,9 +96,9 @@ public class Main {
 
     /*private static void esMatrici(){
         int[][] matrix = new int[5][5];
-        Matrici.caricaMatrice(matrix);
-        Matrici.stampaOrizzontale(matrix);
-        Matrici.stampaVerticale(matrix);
+        matrici.Matrici.caricaMatrice(matrix);
+        matrici.Matrici.stampaOrizzontale(matrix);
+        matrici.Matrici.stampaVerticale(matrix);
     }*/
 
 }

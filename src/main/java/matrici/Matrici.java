@@ -1,3 +1,5 @@
+package matrici;
+
 import java.util.Random;
 
 public class Matrici {
