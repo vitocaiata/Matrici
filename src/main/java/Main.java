@@ -13,6 +13,7 @@ public class Main {
         boolean continua = true;
 
 
+
         do{
             System.out.println("------------------------");
             System.out.println("-       ESERCIZIO      -");
@@ -36,15 +37,15 @@ public class Main {
                     System.out.println("Inserisci colonne : ");
                     int col = scelta.nextInt();
                     matrici = new Matrici(new int[riga][col]);
-                    matrici.caricaMatrice();
+                    //matrici.caricaMatrice();
                     System.out.println("\n SCEGLI (0) STAMPA VERTICALE O (1) ORIZZONTALE");
                     stampa = scelta.nextInt();
                     switch(stampa){
                         case 0:
-                            matrici.stampaVerticale();
+                            matrici.orizzontale(10);
                             break;
                         case 1:
-                            matrici.stampaOrizzontale();
+                            matrici.verticale(10);
                             break;
                         default :
                             System.out.println("Errore.");

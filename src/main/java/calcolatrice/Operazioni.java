@@ -1,5 +1,6 @@
 package calcolatrice;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Operazioni {
@@ -22,11 +23,13 @@ public class Operazioni {
 
     public static boolean primo(int n) {
         for (int i=2; i<n; i++) {
-            if (n%i==0)
+            if (n%i==0) {
                 return false;
+            }
         }
-        if (n<2)
+        if (n<2) {
             return false;
+        }
         return true;
     }
 
@@ -41,6 +44,20 @@ public class Operazioni {
             System.out.println("Il numero non è primo!");
         }
 
+    public static void numeroFattoriale(){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Inserisci numero: ");
+        int numero = scan.nextInt();
+        System.out.println("Risultato è : " + fattoriale(numero));
+    }
+
+    public static BigInteger fattoriale(int numero){
+        BigInteger fattoriale = BigInteger.ONE;
+        for(int i = 1;i<=numero;i++){
+            fattoriale = fattoriale.multiply(BigInteger.valueOf(i));
+        }
+        return fattoriale;
+    }
 }
 
 
