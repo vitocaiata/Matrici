@@ -7,14 +7,10 @@ import piramide.Piramidi;
 
 
 import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
 public class TestDynamic{
