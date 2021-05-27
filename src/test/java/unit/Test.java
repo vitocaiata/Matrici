@@ -36,7 +36,7 @@ public class Test {
 
     @ParameterizedTest(name = "bound: {0}")
     @ValueSource(ints = {5,4})
-    @DisplayName("Test matrice orizzontale")
+    @DisplayName("Test matrice verticale")
     @Order(5)
     @Tag("matrice")
     void matriceVer(int valore){
