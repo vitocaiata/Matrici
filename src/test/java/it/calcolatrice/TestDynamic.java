@@ -1,9 +1,7 @@
-package unit;
-import calcolatrice.Operazioni;
-import matrici.Matrici;
+package it.calcolatrice;
+import it.calcolatrice.calcolatrice.Operazioni;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
-import piramide.Piramidi;
 
 
 import java.math.BigInteger;
@@ -34,7 +32,7 @@ public class TestDynamic{
         return Arrays.asList(
                 dynamicTest("1 stampa orizzontale", ()-> Matrici.orizzontale(5)),
                 dynamicTest("2 stampa verticale", ()-> Matrici.verticale(5)),
-                dynamicTest("3 stampa piramide", ()-> Piramidi.stampaPiramide(5))
+                dynamicTest("3 stampa it.calcolatrice.piramide", ()-> Piramidi.stampaPiramide(5))
         );
     }
 }

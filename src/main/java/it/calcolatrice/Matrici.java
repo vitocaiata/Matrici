@@ -1,4 +1,4 @@
-package matrici;
+package it.calcolatrice;
 
 import java.util.Random;
 

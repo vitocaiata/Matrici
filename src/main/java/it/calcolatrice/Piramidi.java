@@ -1,4 +1,4 @@
-package piramide;
+package it.calcolatrice;
 
 public class Piramidi {
     public static void stampaPiramide(int n){

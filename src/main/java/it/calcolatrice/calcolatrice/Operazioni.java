@@ -1,4 +1,4 @@
-package calcolatrice;
+package it.calcolatrice.calcolatrice;
 
 import java.math.BigInteger;
 import java.util.Scanner;
@@ -32,7 +32,6 @@ public class Operazioni {
         }
         return true;
     }
-
 
     public static void numeroPrimo() {
         Scanner scan = new Scanner(System.in);

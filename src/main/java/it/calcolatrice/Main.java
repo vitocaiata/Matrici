@@ -1,6 +1,6 @@
-import calcolatrice.Operazioni;
-import matrici.Matrici;
-import piramide.Piramidi;
+package it.calcolatrice;
+
+import it.calcolatrice.calcolatrice.Operazioni;
 
 import java.util.Scanner;
 
@@ -37,7 +37,7 @@ public class Main {
                     System.out.println("Inserisci colonne : ");
                     int col = scelta.nextInt();
                     matrici = new Matrici(new int[riga][col]);
-                    //matrici.caricaMatrice();
+                    //it.calcolatrice.matrici.caricaMatrice();
                     System.out.println("\n SCEGLI (0) STAMPA VERTICALE O (1) ORIZZONTALE");
                     stampa = scelta.nextInt();
                     switch(stampa){
@@ -97,9 +97,9 @@ public class Main {
 
     /*private static void esMatrici(){
         int[][] matrix = new int[5][5];
-        matrici.Matrici.caricaMatrice(matrix);
-        matrici.Matrici.stampaOrizzontale(matrix);
-        matrici.Matrici.stampaVerticale(matrix);
+        it.calcolatrice.Matrici.caricaMatrice(matrix);
+        it.calcolatrice.Matrici.stampaOrizzontale(matrix);
+        it.calcolatrice.matrici.Matrici.stampaVerticale(matrix);
     }*/
 
 }

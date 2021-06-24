@@ -1,17 +1,14 @@
-package unit;
+package it.calcolatrice;
 
-import matrici.Matrici;
 import org.junit.jupiter.api.*;
-import calcolatrice.Operazioni;
+import it.calcolatrice.calcolatrice.Operazioni;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
-import piramide.Piramidi;
+
 import static org.junit.Assert.*;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
 
 public class Test {
     @BeforeAll
@@ -47,7 +44,7 @@ public class Test {
     @ValueSource(ints = {5})
     @DisplayName("Test piramidi")
     @Order(7)
-    @Tag("piramide")
+    @Tag("it/calcolatrice/piramide")
     void piramide(int valore){
         Piramidi.stampaPiramide(valore);
     }
@@ -56,7 +53,7 @@ public class Test {
     @ValueSource(ints = {5,7,9})
     @DisplayName("somma")
     @Order(1)
-    @Tag("calcolatrice")
+    @Tag("it/calcolatrice/calcolatrice")
     public void somma(int a){
         int somma = Operazioni.Somma(a,a);
         System.out.println("Somma = " + somma);
@@ -66,7 +63,7 @@ public class Test {
     @CsvSource({"1,3"})
     @DisplayName("somma con csv")
     @Order(1)
-    @Tag("calcolatrice")
+    @Tag("it/calcolatrice/calcolatrice")
     public void sommaCsv(int a, int b){
         int somma = Operazioni.Somma(a,b);
         System.out.println("Somma = " + somma);
@@ -77,7 +74,7 @@ public class Test {
     @ValueSource(ints = {5,7,9})
     @DisplayName("moltiplicazione")
     @Order(2)
-    @Tag("calcolatrice")
+    @Tag("it/calcolatrice/calcolatrice")
     public void moltiplicazione(int a){
         int somma = Operazioni.Moltiplicazione(a,a);
         System.out.println("moltiplicazione = " + somma);
@@ -87,7 +84,7 @@ public class Test {
     @ValueSource(ints = {5,7,9})
     @DisplayName("sottrazione")
     @Order(3)
-    @Tag("calcolatrice")
+    @Tag("it/calcolatrice/calcolatrice")
     public void sottrazione(int a){
         int somma = Operazioni.Sottrazione(a,a);
         System.out.println("Sottrazione = " + somma);
@@ -97,7 +94,7 @@ public class Test {
     @ValueSource(ints = {5,7,9})
     @DisplayName("divisione")
     @Order(4)
-    @Tag("calcolatrice")
+    @Tag("it/calcolatrice/calcolatrice")
     public void divisione(int a){
         int somma = Operazioni.Divisione(a,a);
         System.out.println("divisione = " + somma);
